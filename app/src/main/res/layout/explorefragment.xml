@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F2">
+
+
+
+
+    <TextView
+        android:id="@+id/wlc"
+        android:layout_width="136dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+        android:forceDarkAllowed="true"
+        android:text="Welcome to your feed!"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="119dp"
+        android:layout_below="@+id/wlc"
+        android:layout_marginLeft="10dp"
+        android:text="Keep yourself update on what your friends and the city's top foddies are munching on "
+        android:textSize="15sp"></TextView>
+
+    <ImageView
+        android:id="@+id/cartoonmen"
+        android:layout_width="187dp"
+        android:layout_height="238dp"
+
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/wlc"
+        android:background="@drawable/cartoonmen">
+
+    </ImageView>
+<RelativeLayout
+    android:layout_below="@+id/cartoonmen"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+   android:background="@drawable/strokees"
+    android:layout_height="100dp"
+    >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Find your friend on Samvi"
+        android:textColor="#C481E6"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="10dp"
+        android:text="Discover your favorite restaurents and food together"
+        android:textColor="#37323A"
+        android:textSize="14sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="108dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/txt2"
+        android:background="@drawable/pnggurum">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_gradient"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:text="Find Friends">
+
+    </TextView>
+
+</RelativeLayout>
+
+</RelativeLayout>

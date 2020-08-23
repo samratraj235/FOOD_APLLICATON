@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+                android:id="@+id/food_market"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/food"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:text="Food"
+                    android:textColor="#F13535"
+                    android:textSize="25dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/markete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:onClick="Myclick"
+                    android:layout_toRightOf="@+id/food"
+                    android:text="Market"
+                    android:textSize="27dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cravings"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_below="@+id/food_market"
+                android:layout_marginTop="10dp">
+
+
+                <ImageView
+                    android:id="@+id/Burger"
+                    android:layout_width="79dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:background="@drawable/strokees"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/burger"
+                    android:text="Burger" />
+
+                <TextView
+                    android:id="@+id/tb"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Burger"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+
+                    android:text="Burger"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Fries"
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toEndOf="@+id/Burger"
+
+                    android:layout_toRightOf="@+id/Burger"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/friess"
+                    android:text="Fries" />
+
+                <TextView
+                    android:id="@+id/tf"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Fries"
+                    android:layout_marginLeft="16dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tb"
+                    android:gravity="center"
+                    android:text="Fries"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/pizza"
+                    android:layout_width="81dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/Fries"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/pizza"
+                    android:text="pizza" />
+
+                <TextView
+                    android:id="@+id/tpz"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/pizza"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tf"
+                    android:gravity="center"
+                    android:text="Pizza"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/sandwich"
+                    android:layout_width="71dp"
+                    android:layout_height="67dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/pizza"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/sandwich"
+                    android:text="sandwich" />
+
+                <TextView
+                    android:id="@+id/tsandwich"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sandwich"
+                    android:layout_marginLeft="15dp"
+
+
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tpz"
+                    android:gravity="center"
+                    android:text="Sandwich" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/carving"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/cravings"
+                android:layout_marginTop="-3dp">
+
+
+                <ImageView
+                    android:id="@+id/sub"
+                    android:layout_width="82dp"
+                    android:layout_height="66dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/sub"
+                    android:text="Burger" />
+
+                <ImageView
+                    android:id="@+id/ice"
+                    android:layout_width="82dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/tsub"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/icecream" />
+
+                <ImageView
+                    android:id="@+id/Biryani"
+                    android:layout_width="79dp"
+                    android:layout_height="66dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/ice"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/biryani" />
+
+                <ImageView
+                    android:id="@+id/Rolls"
+                    android:layout_width="74dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/Biryani"
+                    android:background="@drawable/strokees"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/roll"
+                    android:text="sandwich" />
+
+                <TextView
+                    android:id="@+id/tsub"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sub"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+
+                    android:text="sub"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tice"
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ice"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tsub"
+                    android:gravity="center"
+                    android:text="Ice cream"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tBiryani"
+                    android:layout_width="73dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/Biryani"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/tice"
+                    android:gravity="center"
+                    android:text="Biryani"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tRoll"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Rolls"
+                    android:layout_marginLeft="46dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/tBiryani"
+                    android:gravity="center"
+                    android:text="Roll"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt"
+                style="@style/CardView.Dark"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/carving"
+                android:paddingLeft="20dp"
+                android:text="Letest Offer"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/Offer"
+                android:layout_width="401dp"
+                android:layout_height="88dp"
+                android:layout_below="@+id/txt"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/Allof"
+                    android:layout_width="76dp"
+                    android:layout_height="79dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="21dp"
+                    android:background="@drawable/offer"
+                    android:gravity="center"
+                    android:text="ALL OFFER"
+                    android:textColor="#F8F3F3"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ofa"
+                    android:layout_width="76dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@id/Allof"
+                    android:background="@drawable/offer"
+                    android:gravity="center"
+                    android:text="min 50% OFF"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ofb"
+                    android:layout_width="74dp"
+                    android:layout_height="79dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@id/ofa"
+                    android:background="@drawable/offer"
+                    android:gravity="center"
+                    android:text="min 40% OFF"
+
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ofc"
+                    android:layout_width="74dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/ofb"
+                    android:background="@drawable/offer"
+                    android:gravity="center"
+                    android:text="min 30% OFF"
+
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/filter"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_below="@+id/Offer"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/flt"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/strokees"
+
+                    android:drawableLeft="@drawable/sliderr"
+                    android:text="Filter"
+
+                    />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/flt"
+                    android:background="@drawable/strokees"
+                    android:gravity="center"
+
+                    android:text="Ratin: 4.0+" />
+
+                <TextView
+                    android:id="@+id/fast"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/rating"
+                    android:background="@drawable/strokees"
+                    android:gravity="center"
+                    android:text="Fastest Delivery"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Restaurent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="RESUTRENT Delivering to you"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nut"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/Restaurent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:text="Everything in a list-go nuts!" />
+
+            <RelativeLayout
+                android:id="@+id/firstrestua"
+                android:layout_width="match_parent"
+                android:layout_height="286dp"
+                android:layout_below="@+id/nut"
+                android:layout_marginTop="14dp">
+
+                <ImageView
+
+                    android:id="@+id/imga"
+                    android:layout_width="348dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/imgc"
+                    android:src="@drawable/strokees" />
+
+                <TextView
+                    android:id="@+id/Kalika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imga"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="KALIKA(Non-veg)"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="123dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Kalika"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/strokees"
+                    android:src="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/imga"
+                    android:layout_marginLeft="7dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/star"
+                    android:background="@drawable/strokees"
+                    android:text="(51 review)" />
+
+                <TextView
+                    android:id="@+id/perperson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/star"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="100Rs per person. 30 mins" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstrestua"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:id="@+id/imgb"
+                    android:layout_width="348dp"
+                    android:layout_height="200dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/dhosha"
+                    android:src="@drawable/strokees" />
+
+                <TextView
+                    android:id="@+id/Madhurima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgb"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Madhurima(sweet, south food)"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/starb"
+                    android:layout_width="123dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Madhurima"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/stroke"
+                    android:src="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/reviewb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/imgb"
+
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toRightOf="@+id/starb"
+                    android:background="@drawable/stroke"
+                    android:text="(100 review)" />
+
+                <TextView
+                    android:id="@+id/perpersonb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/starb"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:text="200Rs per person. 40 mins" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

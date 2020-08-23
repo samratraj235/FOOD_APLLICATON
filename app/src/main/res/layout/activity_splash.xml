@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#F4E1E1"
+    android:layout_height="match_parent"
+  >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="363dp"
+           android:layout_height="49dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_gravity="center"
+           android:text="Samvi"
+           android:gravity="center"
+           android:textColor="@android:color/holo_red_dark"
+           android:textSize="40sp"
+          style="@style/CardView"
+           />
+
+    <TextView
+        android:text="If you feel hungry, come here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="22sp"
+android:layout_gravity="center"
+        android:textColor="#3F048F"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>>
+</RelativeLayout>

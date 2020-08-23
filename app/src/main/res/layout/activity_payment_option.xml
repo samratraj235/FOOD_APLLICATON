@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Samvi_Food.payment_option">
+
+    <TextView
+        android:id="@+id/manage"
+        android:layout_width="412dp"
+        android:layout_height="51dp"
+       android:paddingLeft="20dp"
+        android:background="@drawable/bac"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:text="      Manage Payment Method"
+        android:textSize="20dp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="155dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/manage"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/paytm_logo">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/imf"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/paytm_logo"
+            android:foregroundGravity="center">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imf"
+            android:text="Paytm"
+            android:textSize="20dp"
+            android:textStyle="normal">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="336dp"
+            android:layout_height="23dp"
+            android:layout_below="@+id/pname"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imf"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:text="Link your paytm account to use this payment method"
+            android:textSize="14sp"></TextView>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/rel2"
+        >
+
+        <TextView
+            android:id="@+id/txtp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_width="210dp"
+            android:layout_marginTop="10dp"
+            style="@style/CardView.Dark"
+            android:layout_height="wrap_content"
+            android:text="Online payments"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="397dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtp"
+            android:text="After your first payment,we will save your details for future use"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+
+    </RelativeLayout>
+   <ImageView
+       android:id="@+id/imgc"
+       android:layout_below="@+id/rel2"
+       android:layout_width="50dp"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/payment"
+       android:layout_height="50dp"
+       >
+
+
+   </ImageView>
+
+    <TextView
+        android:id="@+id/cd"
+        android:layout_width="268dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rel2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imgc"
+        android:gravity="center"
+        android:text="Credit,Debit&amp;Atm card"
+        android:textSize="20dp">
+
+    </TextView>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/cd"
+            android:id="@+id/lay1"
+           android:background="@drawable/strokees" >
+
+        </TextView>
+    <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lay1"
+            android:id="@+id/lay2"
+           android:background="@drawable/strokees" >
+
+        </TextView>
+
+    <TextView
+
+        android:id="@+id/lay3"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lay2"
+        android:textSize="20dp"
+        style="@style/CardView.Dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="UPI"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rel3"
+        android:layout_below="@+id/lay3">
+
+        <ImageView
+            android:id="@+id/g"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/googlepay">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/gt"
+            android:layout_width="154dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/g"
+            android:text="Google pay"></TextView>
+        <ImageView
+            android:id="@+id/p"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+         android:layout_below="@+id/g"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/phonepay">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="154dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/gt"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/p"
+            android:text="Phone pay"></TextView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

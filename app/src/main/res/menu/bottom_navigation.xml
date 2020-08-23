@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="order"
+    android:id="@+id/nav_order"
+    android:icon="@drawable/order"
+    >
+
+</item>
+    <item
+        android:title="Explore"
+        android:id="@+id/nav_exp"
+        android:icon="@drawable/explore"
+        >
+
+    </item>
+    <item
+        android:title="profile"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        ></item>
+</menu>

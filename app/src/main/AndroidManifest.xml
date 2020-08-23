@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Samvi_Food">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="samvi food"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Order_place"></activity>
+        <activity android:name=".Adress_book" />
+        <activity android:name=".your_order" />
+        <activity android:name=".notifiicationget" />
+        <activity android:name=".walletl" />
+        <activity android:name=".bookmarkfr" />
+        <activity android:name=".payment_option" />
+        <activity android:name=".Market" />
+        <activity android:name=".customersupport" />
+        <activity android:name=".login_signup.My_cart" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login_signup.LoginSignup"
+            android:label="First Time User" />
+        <activity
+            android:name=".login_signup.RegisterActivity"
+            android:label="First time user" />
+        <activity
+            android:name=".login_signup.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Login" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>
